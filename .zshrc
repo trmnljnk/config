@@ -182,6 +182,8 @@ function encrypt {  # list preferred id last
   gpg --encrypt --armor \
     --output ${output} \
     -r 0xDB2B9D8EB7E8B500 \
+    -r 0xB0320B5FD22DD143 \
+    -r 0x58B7C488AC08BFB1 \
     "${1}" && echo "${1} -> ${output}" }
 
 function decrypt {
